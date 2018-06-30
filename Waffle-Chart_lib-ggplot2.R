@@ -32,7 +32,7 @@ wa<- ggplot(df, aes(x = x, y = y, fill = category)) +
 wa
 
 # вариант-2: шаг-4. класс крутизны угла. Делаем таблицу и задаем данные 
-var <- MDF$morph_class  # Это будет нашей категорией, здесь: класс крутизны угла (8 сторон света) the categorical data 
+var <- MDF$morph_class  # Это будет нашей категорией, здесь: класс крутизны угла / the categorical data 
 nrows <- 10
 df <- expand.grid(y = 1:nrows, x = 1:nrows) # задаем квадрат 10*10
 categ_table <- round(table(var) * ((nrows*nrows)/(length(var)))) # задаем таблицу со значениями категорий
